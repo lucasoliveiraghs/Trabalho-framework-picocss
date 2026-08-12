@@ -11,10 +11,15 @@
     <title>Pico CSS</title>
 </head>
 <body>
-    <header class="container" style="margin-bottom: 3rem;">
-  <nav>
+    <header style="position: sticky; top: 0; z-index: 1000; background-color: var(--pico-background-color); width: 100%;">
+  <nav class="container">
     <ul>
-      <li style="display: inline-flex; align-items: center; gap: 8px;"><strong> <img src="img/icon.png" alt="logo pico css" style="height: 1.2em; width: auto;"> PICO CSS</strong></li> 
+      <li style="display: inline-flex; align-items: center; gap: 8px;">
+        <strong>
+          <img src="img/icon.png" alt="logo pico css" style="height: 1.2em; width: auto;">
+          <a href="#sobre">PICO CSS</a>
+        </strong>
+      </li> 
     </ul>
     <ul>
       <li><a href="#sobre">Sobre</a></li>
@@ -119,11 +124,11 @@
 
      <section>
       <article>
-      <h2>para formulários:</h2>
+      <h2>para Login:</h2>
 
       <form>
         <div class="grid">
-          <input type="text" name="nome" placeholder="Nome" aria-label="Nome" required>
+          <input type="password" name="password" placeholder="Senha" aria-label="senha" minlength="8" maxlength="20" required>
           <input type="email" name="email" placeholder="Endereço de email" aria-label="email" autocomplete="email" required>
           <button type="submit">Inscrever-se</button>
           </div>
@@ -138,7 +143,9 @@
             </fieldset>
       </form>
       </article>
+      </section>
 
+      <section>
       <article>
         <h2>Elementos comuns da web:
         </h2>
@@ -157,7 +164,9 @@
         <input type="range" min="0" max="100" value="50" id="range" name="range">
 
       </article>
+      </section>
     
+      <section>
       <h2>Data e hora + extras:</h2>
 
       <article>
@@ -211,10 +220,12 @@
             </div>
       </div>
       </article>
+      </section>
      </section>
 
-     <article id="quest">
-        <form>
+     <section id="quest">
+     <article>
+        <form id="formQuest">
           <div class="grid">
           <div>
             <label for="like">Você gostou do site?</label>
@@ -227,19 +238,109 @@
             <input type="text" name="nome" placeholder="Resposta..." id="mini" required>
           </div>
           <div> 
-            <input type="email" name="email" id="senha" placeholder="Email" required>
-            <small>Digite seu E-mail</small>
-            <datalist id="email-suggestions">
-            <option value="@gmail.com"></option>
+            <label for="feed">
+              Deixe seu feedback sobre o site (opcional)
+            </label>
+            <textarea name="feedback" id="feed" rows="6" placeholder="Exemplo: Eu gostaria que o site mostrasse como ele foi feito..."></textarea>
+
             </datalist>
-            <input type="password" name="password" id="Senha" placeholder="senha" minlength="6" maxlength="20" required>
-            <small>Digite sua senha</small>   
-            <button type="submit">Enviar question</button>        
+      
+            <button type="submit" style="margin-top: 0.375rem;">Enviar Questionário</button>   
+            
+            <script>
+            const form = document.getElementById('formQuest');
+
+            form.addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            alert('Questionário enviado com sucesso!');
+            form.reset(); 
+            });
+            </script>
+
           </div>
           </div>
         </form>
       </div>
      </article>
+     </section>
+
+     <section id="pagar">
+      <div class="grid">
+        <div>
+          <article>
+            <header style="border-bottom: 0.5rem solid var(--pico-color);">
+              <h1>Teste Gratuito</h1>
+            </header>
+
+            <ul style="padding: 0;"> 
+                        <li style="list-style-type: none;" ><span style="color: aqua;" >&#10003</span> Ter o melhor framework ao seu dispor</li> <br>
+                        <li  style="list-style-type: none;"><span style="color: aqua;">&#10003</span> Ter a melhor e mais prática <br> ferramenta para CSS do mercado. </li> <br>
+                        <li  style="list-style-type: none;"><span style="color: aqua;">&#10003</span> preço acessível.</li  style="list-style-type: none;"> <br>
+                        <li  style="list-style-type: none;"><span style="color: rgb(255, 0, 0);">&#10005</span> Uso ilimitado</li> <br>
+                        
+                    </ul>
+
+                    <button type="submit">ASSINAR PLANO <br>
+                      <div style="border: 0.05rem solid
+                       var(--pico-color)"></div>
+                      R$ 0,00/Teste de 7 dias
+                    </button>
+
+                    <div style="border: 0.05rem solid
+                       var(--pico-color); margin-top: 2rem;"></div>
+
+                    <h4>FORMAS DE PAGAMENTO</h4> <br>
+
+                   
+                        <ul>
+                            <li style="color: aqua;"><span style="color: var(--pico-color);" >Boleto</span></li>
+                      
+                            <li style="color: aqua;"><span style="color: var(--pico-color);">Pix.
+                            </span></li>
+                        </ul>
+                        
+          </article>
+        </div>
+
+        <div>
+          <article>
+            <header style="border-bottom: 0.5rem solid var(--pico-color);">
+              <h1>Premium</h1>
+            </header>
+
+            <ul style="padding: 0;"> 
+                        <li style="list-style-type: none;" ><span style="color: aqua;" >&#10003</span> Ter o melhor framework ao seu dispor</li> <br>
+                        <li  style="list-style-type: none;"><span style="color: aqua;">&#10003</span> Ter a melhor e mais prática <br> ferramenta para CSS do mercado. </li> <br>
+                        <li  style="list-style-type: none;"><span style="color: aqua;">&#10003</span> preço acessível.</li  style="list-style-type: none;"> <br>
+                        <li  style="list-style-type: none;"><span style="color: aqua">&#10003</span> Uso ilimitado</li> <br>
+                        
+                    </ul>
+
+                    <button type="submit">ASSINAR PLANO <br>
+                      <div style="border: 0.05rem solid
+                       var(--pico-color)"></div>
+                      R$ 50,00/Mês
+                    </button>
+
+                    <div style="border: 0.05rem solid
+                       var(--pico-color); margin-top: 2rem;"></div>
+
+                    <h4>FORMAS DE PAGAMENTO</h4> <br>
+
+                    
+                        <ul>
+                            <li style="color: aqua;"><span style="color: var(--pico-color);" >Boleto</span></li>
+                            <li style="color: aqua;"><span style="color: var(--pico-color);">Pix.
+                            </span></li>
+                        </ul>
+          </article>
+        </div>
+      </div>
+     </section>
+
+
+
     </main>
 </body>
 </html>
