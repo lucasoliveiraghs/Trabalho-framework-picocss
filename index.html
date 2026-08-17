@@ -1,282 +1,325 @@
 <!DOCTYPE html>
 <html data-theme="light" lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
->
-<link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
-    <title>Pico CSS</title>
-    <style>
-  @media (max-width: 768px) {
-    header nav { flex-direction: column; align-items: flex-start; }
-    header nav ul { flex-wrap: wrap; padding: 0.5rem 0; }
-  }
-</style>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+  <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <title>Pico CSS</title>
 </head>
+
 <body>
-    <header style="position: sticky; top: 0; z-index: 1000; background-color: var(--pico-background-color); border-bottom: 0.1rem solid var(--pico-color); width: 100%;">
-  <nav class="container">
-    <ul>
-      <li style="display: inline-flex; align-items: center; gap: 0,5rem;">
-        <strong>
-          <img src="img/icon.png" alt="logo pico css" style="height: 1.2em; width: auto;">
-          <a href="#sobre">PICO CSS</a>
-        </strong>
-      </li> 
-    </ul>
-    <ul>
-      <li><a href="#sobre">Sobre</a></li>
-      <li><a href="#pqusar">Vantagens</a></li>
-      <li><a href="#quemusa">Onde usar</a></li>
-      <li><a href="#exemplos">Exemplos</a></li>
-      <li><a href="#quest">Questionário</a></li>
-      <li><a href="#pagar" role="button" class="contrast">Obter framework</a></li>
-    </ul>
-  </nav>
-</header>
+  <header style="position: sticky; top: 0; z-index: 1000; background-color: var(--pico-background-color); border-bottom: 0.1rem solid var(--pico-color); width: 100%;">
+    <nav class="container">
+      <ul>
+        <li><a href="html/indexdark.html" role="button" class="contrast">🌙 Modo Dark</a></li>
+        <li style="display: inline-flex; align-items: center; gap: 0,5rem;">
+          <strong>
+            <img src="img/icon.png" alt="logo pico css" style="height: 1.2em; width: auto;">
+            <a href="#sobre">PICO CSS</a>
+          </strong>
+        </li>
+      </ul>
 
-    <main>
-      
-      <img src="img/open1.png" alt="open light" style="margin-bottom: 2rem; width: 100%;">
-      
-      <section class="container" id="sobre">
-     <h1>SOBRE O PICO CSS</h1>
-     <p>O Pico CSS é um framework CSS minimalista, leve e extremamente elegante, criado com a proposta principal de estilizar tags HTML semânticas de maneira totalmente automática, sem a necessidade de poluir sua estrutura de código com dezenas de classes utilitárias. Enquanto ferramentas tradicionais exigem a inclusão manual de componentes ou classes específicas para cada elemento estilizado, o Pico CSS atua diretamente sobre a marcação nativa do HTML. Isso significa que tags comuns do dia a dia, como <code>&lt;button&gt;</code>, <code>&lt;input&gt;</code>, <code>&lt;article&gt;</code>, <code>&lt;header&gt;</code> e <code>&lt;nav&gt;</code>, ganham instantaneamente um visual moderno, limpo, totalmente responsivo e com suporte nativo a temas claro e escuro, permitindo que você foque inteiramente na estrutura do seu conteúdo sem perder tempo com configurações complexas de estilização.</p>
-     </section>
+      <ul>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#pqusar">Vantagens</a></li>
+        <li><a href="#quemusa">Onde usar</a></li>
+        <li><a href="#exemplos">Exemplos</a></li>
+        <li><a href="#quest">Questionário</a></li>
+        <li><a href="#pagar" role="button" class="contrast">Obter framework</a></li>
+      </ul>
+    </nav>
+  </header>
 
-     <section class="container" id="pqusar">
+  <main>
+    <img src="img/open1.png" alt="open light" style="margin-bottom: 2rem; width: 100%;">
+
+    <section class="container" id="sobre">
+      <h1>SOBRE O PICO CSS</h1>
+      <p>
+        O Pico CSS é um framework CSS minimalista, leve e extremamente elegante,
+        criado com a proposta principal de estilizar tags HTML semânticas de maneira
+        totalmente automática, sem a necessidade de poluir sua estrutura de código
+        com dezenas de classes utilitárias. Enquanto ferramentas tradicionais exigem
+        a inclusão manual de componentes ou classes específicas para cada elemento
+        estilizado, o Pico CSS atua diretamente sobre a marcação nativa do HTML.
+        Isso significa que tags comuns do dia a dia, como
+        <code>&lt;button&gt;</code>, <code>&lt;input&gt;</code>,
+        <code>&lt;article&gt;</code>, <code>&lt;header&gt;</code> e
+        <code>&lt;nav&gt;</code>, ganham instantaneamente um visual moderno,
+        limpo, totalmente responsivo e com suporte nativo a temas claro e escuro,
+        permitindo que você foque inteiramente na estrutura do seu conteúdo sem
+        perder tempo com configurações complexas de estilização.
+      </p>
+    </section>
+
+    <section class="container" id="pqusar">
       <h1>Vantagens e Diferenciais do Pico CSS</h1>
 
       <div class="grid">
         <article>
-          <header style="border: 2px solid;"><strong> Código Limpo</strong></header>
-          <p>Escreva tags HTML nativas como <code>&lt;button&gt;</code>, <code>&lt;input&gt;</code> e <code>&lt;article&gt;</code>. O Pico estiliza tudo automaticamente sem exigir classes repetitivas.Gerando assim um codigo menos poluído e mais dinâmico.</p>
+          <header style="border: 2px solid;">
+            <strong>Código Limpo</strong>
+          </header>
+          <p>
+            Escreva tags HTML nativas como
+            <code>&lt;button&gt;</code>,
+            <code>&lt;input&gt;</code> e
+            <code>&lt;article&gt;</code>.
+            O Pico estiliza tudo automaticamente sem exigir classes
+            repetitivas.Gerando assim um codigo menos poluído e mais dinâmico.
+          </p>
         </article>
-        <article>
-          <header style="border: 2px solid;"><strong> Modo Escuro Nativo</strong></header>
-          <p>Suporte automático ao tema claro e escuro de acordo com as preferências do sistema do usuário, sem scripts adicionais. Mas também flexível para fazer botão de seleção de forma tradicional.</p>
-        </article>
-        
-        <article>
-          <header style="border: 2px solid;"><strong> Ultra Leve e Rápido</strong></header>
-          <p>Com menos de 10KB, suas páginas carregam instantaneamente em qualquer celular ou conexão lenta. Sendo prático e ideal para pequenos projetos que buscam praticidade sem perder o bom visual.</p>
-        </article>
-        </div>
 
-        <div class="grid">
         <article>
-          <header style="border: 2px solid;"><strong>Fácil aprendizado</strong></header>
-          <p>Não é preciso memorizar e ir a fundo em tags e mecanismos css complexos, sendo um contéudo de fácil manuseio apenas com o conhecimento html.</p>
+          <header style="border: 2px solid;">
+            <strong>Modo Escuro Nativo</strong>
+          </header>
+          <p>
+            Suporte automático ao tema claro e escuro de acordo com as
+            preferências do sistema do usuário, sem scripts adicionais.
+            Mas também flexível para fazer botão de seleção de forma tradicional.
+          </p>
+        </article>
+
+        <article>
+          <header style="border: 2px solid;">
+            <strong>Ultra Leve e Rápido</strong>
+          </header>
+          <p>
+            Com menos de 10KB, suas páginas carregam instantaneamente em qualquer
+            celular ou conexão lenta. Sendo prático e ideal para pequenos
+            projetos que buscam praticidade sem perder o bom visual.
+          </p>
         </article>
       </div>
 
       <div class="grid">
         <article>
-          <header style="border: 2px solid;"><strong>Responsividade integrada</strong></header>
-          <p>Todos os componentes nativos e estruturas como formulários já vem pré-configurada para se adaptarem a qualquer tamanho de tela, sem que seja necessário criar várias media queries.</p>
+          <header style="border: 2px solid;">
+            <strong>Fácil aprendizado</strong>
+          </header>
+          <p>
+            Não é preciso memorizar e ir a fundo em tags e mecanismos css
+            complexos, sendo um contéudo de fácil manuseio apenas com o
+            conhecimento html.
+          </p>
+        </article>
+      </div>
+
+      <div class="grid">
+        <article>
+          <header style="border: 2px solid;">
+            <strong>Responsividade integrada</strong>
+          </header>
+          <p>
+            Todos os componentes nativos e estruturas como formulários já vem
+            pré-configurada para se adaptarem a qualquer tamanho de tela,
+            sem que seja necessário criar várias media queries.
+          </p>
         </article>
 
         <article>
-          <header style="border: 2px solid;"><strong>Encaixe no mercado atual</strong></header>
-          <p>As empresas cada vez mais vem buscando o minimalismo em seus sites e apps sem abrir mão de uma estética agradável. Isso faz com que o Pico CSS seja a melhor opção na contemporaneidade</p>
+          <header style="border: 2px solid;">
+            <strong>Encaixe no mercado atual</strong>
+          </header>
+          <p>
+            As empresas cada vez mais vem buscando o minimalismo em seus sites
+            e apps sem abrir mão de uma estética agradável. Isso faz com que
+            o Pico CSS seja a melhor opção na contemporaneidade
+          </p>
         </article>
       </div>
-     </section>
+    </section>
 
-     <section class="container" id="quemusa">
-      <h1>Onde e Quando é mais  usado</h1>
-
+    <section class="container" id="quemusa">
+      <h1>Onde e Quando é mais usado</h1>
 
       <div class="grid">
         <article style="padding: 1.5rem; border: 2px solid;">
-        <ul>
-        <li style="list-style-type: circle;">Protótipos Rápidos e MVPs: Quando você precisa testar uma ideia ou criar uma versão funcional de um produto rapidamente, sem perder tempo configurando classes ou temas.</li>
+          <ul>
+            <li style="list-style-type: circle;">
+              Protótipos Rápidos e MVPs: Quando você precisa testar uma ideia
+              ou criar uma versão funcional de um produto rapidamente,
+              sem perder tempo configurando classes ou temas.
+            </li>
 
-        <li style="list-style-type: circle;">Páginas de Documentação e Blogs: Ideal para sites baseados predominantemente em texto e leitura, onde o foco principal é a clareza do conteúdo.</li>
-        </ul>
+            <li style="list-style-type: circle;">
+              Páginas de Documentação e Blogs: Ideal para sites baseados
+              predominantemente em texto e leitura, onde o foco principal
+              é a clareza do conteúdo.
+            </li>
+          </ul>
         </article>
-        </div>
+      </div>
 
-        <div class="grid">
+      <div class="grid">
         <article style="padding: 1.5rem; border: 2px solid;">
-        <ul>
-        <li style="list-style-type: circle;">Protótipos Rápidos e MVPs: Quando você precisa testar uma ideia ou criar uma versão funcional de um produto rapidamente, sem perder tempo configurando classes ou temas.</li>
+          <ul>
+            <li style="list-style-type: circle;">
+              Protótipos Rápidos e MVPs: Quando você precisa testar uma ideia
+              ou criar uma versão funcional de um produto rapidamente,
+              sem perder tempo configurando classes ou temas.
+            </li>
 
-        <li style="list-style-type: circle;">Páginas de Documentação e Blogs: Ideal para sites baseados predominantemente em texto e leitura, onde o foco principal é a clareza do conteúdo.</li>
-        </ul>
+            <li style="list-style-type: circle;">
+              Páginas de Documentação e Blogs: Ideal para sites baseados
+              predominantemente em texto e leitura, onde o foco principal
+              é a clareza do conteúdo.
+            </li>
+          </ul>
         </article>
-        </div>
-      
+      </div>
 
-        <div>
-          <article>
-            <header style="border: 2px solid;"><strong>Sites e ferramentas que usam do framework</strong></header>
-            <ol>
-              <li>O Próprio Site Oficial do Pico CSS.</li>
-              <li>Ferramentas para Desenvolvedores (Ex: CSS Loaders / CSS Generators).</li>
-              <li>Ferramentas para Desenvolvedores (Ex: CSS Loaders / CSS Generators).</li>
-              <li>Painéis de Análise e Ferramentas Internas (SaaS).</li>
-            </ol>
-          </article>
-        </div>
-      
-     </section class="container">
+      <div>
+        <article>
+          <header style="border: 2px solid;">
+            <strong>Sites e ferramentas que usam do framework</strong>
+          </header>
 
-     <section class="container" id="exemplos"></section>
-     
+          <ol>
+            <li>O Próprio Site Oficial do Pico CSS.</li>
+            <li>Ferramentas para Desenvolvedores (Ex: CSS Loaders / CSS Generators).</li>
+            <li>Ferramentas para Desenvolvedores (Ex: CSS Loaders / CSS Generators).</li>
+            <li>Painéis de Análise e Ferramentas Internas (SaaS).</li>
+          </ol>
+        </article>
+      </div>
+    </section>
 
-     <section class="container">
-      <h1>Exemplos práticos de aplicação
-     </h1>
+    <section class="container" id="exemplos"></section>
+
+    <section class="container">
+      <h1>Exemplos práticos de aplicação</h1>
+
       <article>
-      <h2>para Login:</h2>
+        <h2>para Login:</h2>
 
-      <form>
-        <div class="grid">
-          <input type="password" name="password" placeholder="Senha" aria-label="senha" minlength="8" maxlength="20" required>
-
-          <input type="email" name="email" placeholder="Endereço de email" aria-label="email" autocomplete="email" required>
-
-          <button type="submit">Inscrever-se</button>
+        <form>
+          <div class="grid">
+            <input type="password" name="password" placeholder="Senha" aria-label="senha" minlength="8" maxlength="20" required>
+            <input type="email" name="email" placeholder="Endereço de email" aria-label="email" autocomplete="email" required>
+            <button type="submit">Inscrever-se</button>
           </div>
-          
-            <fieldset>
-              <label for="terms">
-                <input type="checkbox" role="switch" id="terms" name="terms" required>
-              </input>
-                Eu concordo com as 
-              <a href="#" onclick="event.preventDefault()">Politicas de privacidade</a>
-              </label>
-            </fieldset>
-      </form>
-      </article>
-      </section>
 
-      <section class="container">
+          <fieldset>
+            <label for="terms">
+              <input type="checkbox" role="switch" id="terms" name="terms" required>
+              Eu concordo com as
+              <a href="#" onclick="event.preventDefault()">Politicas de privacidade</a>
+            </label>
+          </fieldset>
+        </form>
+      </article>
+    </section>
+
+    <section class="container">
       <article>
-        <h2>Elementos comuns da web:
-        </h2>
+        <h2>Elementos comuns da web:</h2>
+
         <input type="search" id="pesquisar" name="pesquisar" placeholder="pesquisar">
 
         <select name="selecionar" id="select">
-        <option value selecionar> Selecione...</option>
-        <option value selecionar> Pico CSS</option>
-        <option value selecionar> É o melhor</option>
-        <option value selecionar> Framework</option>
-        <option value selecionar> Do mundo</option>
+          <option value="selecionar">Selecione...</option>
+          <option value="selecionar">Pico CSS</option>
+          <option value="selecionar">É o melhor</option>
+          <option value="selecionar">Framework</option>
+          <option value="selecionar">Do mundo</option>
         </select>
 
         <input type="file" id="file" name="file">
-
         <input type="range" min="0" max="100" value="50" id="range" name="range">
-
       </article>
-      </section>
-    
-      <section class="container">
+    </section>
+
+    <section class="container">
       <h2>Data e hora + extras:</h2>
 
       <article>
-      <div class="grid">
-        
+        <div class="grid">
           <input type="date" id="date" name="date">
-
           <input type="time" id="time" name="time">
-      </div>
+        </div>
 
-      <div class="grid">
-        <input type="text" id="valid" name="valid" placeholder="Válido" aria-invalid="false">
+        <div class="grid">
+          <input type="text" id="valid" name="valid" placeholder="Válido" aria-invalid="false">
+          <input type="text" id="invalid" name="invalid" placeholder="Inválido" aria-invalid="true">
+          <input type="text" id="disabled" name="disabled" placeholder="Desabilitado" disabled>
+        </div>
 
-        <input type="text" id="invalid" name="invalid" placeholder="Inválido" aria-invalid="true">
+        <div class="grid">
+          <div>
+            <label for="checkbox1">
+              <input type="checkbox" id="checkbox1" name="checkbox1" checked>
+              Checkbox
+            </label>
 
-        <input type="text" id="disabled" name="disabled" placeholder="Desabilitado" disabled>
-      </div>
-
-      <div class="grid">
-        <div><label for="checkbox1">
-                <input type="checkbox" id="checkbox1" name="checkbox1" checked>
-                Checkbox
-              </label>
             <label for="checkbox2">
-                <input type="checkbox" id="checkbox2" name="checkbox2">
-                Checkbox
-              </label>
-            </div>
+              <input type="checkbox" id="checkbox2" name="checkbox2">
+              Checkbox
+            </label>
+          </div>
 
-            <div>
-              <label for="radio1">
-                <input type="radio" id="radio1" name="radio" value="radio1" checked>
-                Radio button
-              </label>
-              <label for="radio2">
-                <input type="radio" id="radio2" name="radio" value="radio2">
-                Radio button
-              </label>
-            </div>
+          <div>
+            <label for="radio1">
+              <input type="radio" id="radio1" name="radio" value="radio1" checked>
+              Radio button
+            </label>
 
-            <div>
-              <label for="switch1">
-                <input type="checkbox" id="switch1" name="switch1" role="switch" checked>
-                Switch
-              </label>
+            <label for="radio2">
+              <input type="radio" id="radio2" name="radio" value="radio2">
+              Radio button
+            </label>
+          </div>
 
-              <label for="switch2">
-                <input type="checkbox" id="switch2" name="switch2" role="switch">
-                Switch
-              </label>
-            </div>
-      </div>
+          <div>
+            <label for="switch1">
+              <input type="checkbox" id="switch1" name="switch1" role="switch" checked>
+              Switch
+            </label>
+
+            <label for="switch2">
+              <input type="checkbox" id="switch2" name="switch2" role="switch">
+              Switch
+            </label>
+          </div>
+        </div>
       </article>
-      </section>
-     </section>
+    </section>
 
-     <article class="container">
-      <button type="submit" onclick="darkview('html/indexdark.html')">Vizualizar site no modo Dark <br>
-      </button>
-     </article>
-
-     <section class="container" id="quest">
-     <article>
+    <section class="container" id="quest">
+      <article>
         <form id="formQuest">
           <div class="grid">
-          <div>
-            <label for="like">Você gostou do site?</label>
-            <input type="text" name="nome" placeholder="Resposta..." id="like" required>
-          
-            <label for="pic">Você pretende usar o Pico CSS?</label>
-            <input type="text" name="nome" placeholder="Resposta..." id="pic" required>
+            <div>
+              <label for="like">Você gostou do site?</label>
+              <input type="text" name="nome" placeholder="Resposta..." id="like" required>
 
-            <label for="mini">Você prefere sites extravagantes ou minimalistas?</label>
-            <input type="text" name="nome" placeholder="Resposta..." id="mini" required>
-          </div>
-          <div> 
-            <label for="feed">
-              Deixe seu feedback sobre o site (opcional)
-            </label>
-            <textarea name="feedback" id="feed" rows="6" placeholder="Exemplo: Eu gostaria que o site mostrasse como ele foi feito..."></textarea>
+              <label for="pic">Você pretende usar o Pico CSS?</label>
+              <input type="text" name="nome" placeholder="Resposta..." id="pic" required>
 
-            </datalist>
-      
-            <button type="submit" style="margin-top: 0.375rem;" onclick="questi()">Enviar Questionário</button>   
-            
-            <script>
-              function questi() {
-              alert('Questionário enviado!');
-              }
-           </script>
+              <label for="mini">Você prefere sites extravagantes ou minimalistas?</label>
+              <input type="text" name="nome" placeholder="Resposta..." id="mini" required>
+            </div>
 
-          </div>
+            <div>
+              <label for="feed">Deixe seu feedback sobre o site (opcional)</label>
+
+              <textarea name="feedback" id="feed" rows="6" placeholder="Exemplo: Eu gostaria que o site mostrasse como ele foi feito..."></textarea>
+
+              <button type="submit" style="margin-top: 0.375rem;" onclick="questi()">
+                Enviar Questionário
+              </button>
+            </div>
           </div>
         </form>
-      </div>
-     </article>
-     </section>
+      </article>
+    </section>
 
-     <section class="container" id="pagar">
+    <section class="container" id="pagar">
       <div class="grid">
         <div>
           <article>
@@ -284,33 +327,59 @@
               <h1>Teste Gratuito</h1>
             </header>
 
-            <ul style="padding: 0;"> 
-                        <li style="list-style-type: none;" ><span style="color: aqua;" >&#10003</span> Ter o melhor framework ao seu dispor</li> <br>
-                        <li  style="list-style-type: none;"><span style="color: aqua;">&#10003</span> Ter a melhor e mais prática <br> ferramenta para CSS do mercado. </li> <br>
-                        <li  style="list-style-type: none;"><span style="color: aqua;">&#10003</span> preço acessível.</li  style="list-style-type: none;"> <br>
-                        <li  style="list-style-type: none;"><span style="color: rgb(255, 0, 0);">&#10005</span> Uso ilimitado</li> <br>
-                        
-                    </ul>
+            <ul style="padding: 0;">
+              <li style="list-style-type: none;">
+                <span style="color: aqua;">&#10003;</span>
+                Ter o melhor framework ao seu dispor
+              </li>
 
-                    <button type="submit" onclick="compra('html/compra.html')">ASSINAR PLANO <br>
-                      <div style="border: 0.05rem solid
-                       var(--pico-color)"></div>
-                      R$ 0,00/Teste de 7 dias
-                    </button>
+              <br>
 
-                    <div style="border: 0.05rem solid
-                       var(--pico-color); margin-top: 2rem;"></div>
+              <li style="list-style-type: none;">
+                <span style="color: aqua;">&#10003;</span>
+                Ter a melhor e mais prática
+                <br>
+                ferramenta para CSS do mercado.
+              </li>
 
-                    <h4>FORMAS DE PAGAMENTO</h4> <br>
+              <br>
 
-                   
-                        <ul>
-                            <li style="color: aqua;"><span style="color: var(--pico-color);" >Boleto</span></li>
-                      
-                            <li style="color: aqua;"><span style="color: var(--pico-color);">Pix.
-                            </span></li>
-                        </ul>
-                        
+              <li style="list-style-type: none;">
+                <span style="color: aqua;">&#10003;</span>
+                preço acessível.
+              </li>
+
+              <br>
+
+              <li style="list-style-type: none;">
+                <span style="color: rgb(255, 0, 0);">&#10005;</span>
+                Uso ilimitado
+              </li>
+
+              <br>
+            </ul>
+
+            <button type="submit" onclick="compra('html/compra.html')">
+              ASSINAR PLANO
+              <br>
+              <div style="border: 0.05rem solid var(--pico-color)"></div>
+              R$ 0,00/Teste de 7 dias
+            </button>
+
+            <div style="border: 0.05rem solid var(--pico-color); margin-top: 2rem;"></div>
+
+            <h4>FORMAS DE PAGAMENTO</h4>
+            <br>
+
+            <ul>
+              <li style="color: aqua;">
+                <span style="color: var(--pico-color);">Boleto</span>
+              </li>
+
+              <li style="color: aqua;">
+                <span style="color: var(--pico-color);">Pix.</span>
+              </li>
+            </ul>
           </article>
         </div>
 
@@ -320,98 +389,117 @@
               <h1>Premium</h1>
             </header>
 
-            <ul style="padding: 0;"> 
-                        <li style="list-style-type: none;" ><span style="color: aqua;" >&#10003</span> Ter o melhor framework ao seu dispor</li> <br>
-                        <li  style="list-style-type: none;"><span style="color: aqua;">&#10003</span> Ter a melhor e mais prática <br> ferramenta para CSS do mercado. </li> <br>
-                        <li  style="list-style-type: none;"><span style="color: aqua;">&#10003</span> preço acessível.</li  style="list-style-type: none;"> <br>
-                        <li  style="list-style-type: none;"><span style="color: aqua">&#10003</span> Uso ilimitado</li> <br>
-                        
-                    </ul>
+            <ul style="padding: 0;">
+              <li style="list-style-type: none;">
+                <span style="color: aqua;">&#10003;</span>
+                Ter o melhor framework ao seu dispor
+              </li>
 
-                    <button type="submit" onclick="compra('html/compra.html')">ASSINAR PLANO <br>
-                      <div style="border: 0.05rem solid
-                       var(--pico-color)"></div>
-                      R$ 50,00/Mês
+              <br>
 
-                
-                    </button>
+              <li style="list-style-type: none;">
+                <span style="color: aqua;">&#10003;</span>
+                Ter a melhor e mais prática
+                <br>
+                ferramenta para CSS do mercado.
+              </li>
 
+              <br>
 
-                    <div style="border: 0.05rem solid
-                       var(--pico-color); margin-top: 2rem;"></div>
+              <li style="list-style-type: none;">
+                <span style="color: aqua;">&#10003;</span>
+                preço acessível.
+              </li>
 
-                    <h4>FORMAS DE PAGAMENTO</h4> <br>
+              <br>
 
-                    
-                        <ul>
-                            <li style="color: aqua;"><span style="color: var(--pico-color);" >Boleto</span></li>
-                            <li style="color: aqua;"><span style="color: var(--pico-color);">Pix.
-                            </span></li>
-                        </ul>
+              <li style="list-style-type: none;">
+                <span style="color: aqua;">&#10003;</span>
+                Uso ilimitado
+              </li>
+
+              <br>
+            </ul>
+
+            <button type="submit" onclick="compra('html/compra.html')">
+              ASSINAR PLANO
+              <br>
+              <div style="border: 0.05rem solid var(--pico-color)"></div>
+              R$ 50,00/Mês
+            </button>
+
+            <div style="border: 0.05rem solid var(--pico-color); margin-top: 2rem;"></div>
+
+            <h4>FORMAS DE PAGAMENTO</h4>
+            <br>
+
+            <ul>
+              <li style="color: aqua;">
+                <span style="color: var(--pico-color);">Boleto</span>
+              </li>
+
+              <li style="color: aqua;">
+                <span style="color: var(--pico-color);">Pix.</span>
+              </li>
+            </ul>
           </article>
         </div>
       </div>
-     </section>
+    </section>
 
-     <section>
-      <footer style="border-top: 0.1rem solid var(--pico-color); width: 100%;">
-        <div class="grid">
-          <nav>
+    <section>
+      <section>
+        <footer>
+          <div class="container">
+            <div class="grid footer-grid">
+              <div>
+                <p class="footer-logo">
+                  <a href="#sobre">
+                    <img src="img/icon.png" alt="logo pico css">
+                    <strong>PICO CSS</strong>
+                  </a>
+                </p>
 
-            <div>
-                <a class="alink" href="">
-                    <h2><strong>
-          <img src="img/icon.png" alt="logo pico css" style="height: 1.2em; width: auto;">
-          <a href="#sobre" style="text-decoration: none;">PICO CSS</a>
-        </strong></h2>
-                </a> <br>
-                <p class="CG">Utilizar um framework pode ser mais facil do que parece.</p>
+                <p class="CG">
+                  Utilizar um framework pode ser mais fácil do que parece.
+                </p>
 
-                 <div>
-                <p>© 2026 Pico CSS.</p>
+                <p>
+                  <small>© 2026 Pico CSS.</small>
+                </p>
+              </div>
+
+              <div class="footer-links">
+                <ul>
+                  <li><a href="#sobre">Sobre</a></li>
+                  <li><a href="#pqusar">Vantagens</a></li>
+                  <li><a href="#quemusa">Onde usar</a></li>
+                  <li><a href="#exemplos">Exemplos</a></li>
+                  <li><a href="#quest">Questionário</a></li>
+                  <li><a href="#pagar">Obter framework</a></li>
+                </ul>
+              </div>
+
+              <div class="footer-links">
+                <ul>
+                  <li>
+                    <a href="https://github.com/lucasoliveiraghs/Trabalho-framework-picocss" target="_blank" rel="noopener">
+                      Repositório do site
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="https://picocss.com/" target="_blank" rel="noopener">
+                      Site oficial PICO CSS
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
-            </div>
-            <div>
-
-            <ul style="flex-direction: column;">
-      <li><a href="#sobre" style="text-decoration: none; 
-      ">Sobre</a></li>
-      <li><a href="#pqusar" style="text-decoration: none; ">Vantagens</a></li>
-      <li><a href="#quemusa" style="text-decoration: none; ">Onde usar</a></li>
-      <li><a href="#exemplos" style="text-decoration: none; ">Exemplos</a></li>
-      <li><a href="#quest" style="text-decoration: none; ">Questionário</a></li>
-      <li><a href="#pagar" style="text-decoration: none; ">Obter framework</a></li>
-    </ul>
-    </div>
-
-            <div>
-               <ul style="flex-direction: column;">
-      <li><a href="https://github.com/lucasoliveiraghs/Trabalho-framework-picocss" target="_blank" rel="noopener" style="text-decoration: none; list-style-type: none;">Repositório do site</a></li>
-      <li><a href="https://picocss.com/" target="_blank" rel="noopener" style="text-decoration: none; list-style-type: none; ">Site oficial PICO CSS</a></li>
-    </ul>
-
-            </div>
-        </div>
-
-            </nav>
-        
-    </footer>
-     </section>
-
-     <script>
-  function compra(linkDestino) {
-   
-    alert('Assinatura feita com sucesso!');
-    
-    
-    window.open(linkDestino, '_blank'); 
-  }
-
-  function darkview(linkDestino) {
-    window.open(linkDestino, '_blank')
-  }
-</script>
-
-    </main>
+          </div>
+        </footer>
+      </section>
+    </section>
+  </main>
 </body>
 </html>
