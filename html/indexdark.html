@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html data-theme="light" lang="pt-br">
+<html data-theme="dark" lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,15 +7,8 @@
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
 >
-<link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+<link rel="shortcut icon" href="../img/icon.png" type="image/x-icon">
     <title>Pico CSS</title>
-    <style>
-  @media (max-width: 768px) {
-    header nav { flex-direction: column; align-items: flex-start; }
-    header nav ul { flex-wrap: wrap; padding: 0.5rem 0; }
-  }
-</style>
-
 </head>
 <body>
     <header style="position: sticky; top: 0; z-index: 1000; background-color: var(--pico-background-color); border-bottom: 0.1rem solid var(--pico-color); width: 100%;">
@@ -23,7 +16,7 @@
     <ul>
       <li style="display: inline-flex; align-items: center; gap: 0,5rem;">
         <strong>
-          <img src="img/icon.png" alt="logo pico css" style="height: 1.2em; width: auto;">
+          <img src="../img/icon.png" alt="logo pico css" style="height: 1.2em; width: auto;">
           <a href="#sobre">PICO CSS</a>
         </strong>
       </li> 
@@ -41,8 +34,8 @@
 
     <main>
       
-      <img src="img/open1.png" alt="open light" style="margin-bottom: 2rem; width: 100%;">
-      
+        <img src="../img/open.png" alt="open dark" style="margin-bottom: 2rem; width: 100%;">
+
       <section class="container" id="sobre">
      <h1>SOBRE O PICO CSS</h1>
      <p>O Pico CSS é um framework CSS minimalista, leve e extremamente elegante, criado com a proposta principal de estilizar tags HTML semânticas de maneira totalmente automática, sem a necessidade de poluir sua estrutura de código com dezenas de classes utilitárias. Enquanto ferramentas tradicionais exigem a inclusão manual de componentes ou classes específicas para cada elemento estilizado, o Pico CSS atua diretamente sobre a marcação nativa do HTML. Isso significa que tags comuns do dia a dia, como <code>&lt;button&gt;</code>, <code>&lt;input&gt;</code>, <code>&lt;article&gt;</code>, <code>&lt;header&gt;</code> e <code>&lt;nav&gt;</code>, ganham instantaneamente um visual moderno, limpo, totalmente responsivo e com suporte nativo a temas claro e escuro, permitindo que você foque inteiramente na estrutura do seu conteúdo sem perder tempo com configurações complexas de estilização.</p>
@@ -90,7 +83,6 @@
      <section class="container" id="quemusa">
       <h1>Onde e Quando é mais  usado</h1>
 
-
       <div class="grid">
         <article style="padding: 1.5rem; border: 2px solid;">
         <ul>
@@ -110,7 +102,6 @@
         </ul>
         </article>
         </div>
-      
 
         <div>
           <article>
@@ -235,7 +226,7 @@
      </section>
 
      <article class="container">
-      <button type="submit" onclick="darkview('html/indexdark.html')">Vizualizar site no modo Dark <br>
+      <button type="submit" onclick="lightview('../index.html')">Vizualizar site no modo Light <br>
       </button>
      </article>
 
@@ -292,7 +283,7 @@
                         
                     </ul>
 
-                    <button type="submit" onclick="compra('html/compra.html')">ASSINAR PLANO <br>
+                    <button type="submit" onclick="compra('compra.html')">ASSINAR PLANO <br>
                       <div style="border: 0.05rem solid
                        var(--pico-color)"></div>
                       R$ 0,00/Teste de 7 dias
@@ -328,7 +319,7 @@
                         
                     </ul>
 
-                    <button type="submit" onclick="compra('html/compra.html')">ASSINAR PLANO <br>
+                    <button type="submit" onclick="compra('compra.html')">ASSINAR PLANO <br>
                       <div style="border: 0.05rem solid
                        var(--pico-color)"></div>
                       R$ 50,00/Mês
@@ -361,7 +352,7 @@
             <div>
                 <a class="alink" href="">
                     <h2><strong>
-          <img src="img/icon.png" alt="logo pico css" style="height: 1.2em; width: auto;">
+          <img src="../img/icon.png" alt="logo pico css" style="height: 1.2em; width: auto;">
           <a href="#sobre" style="text-decoration: none;">PICO CSS</a>
         </strong></h2>
                 </a> <br>
@@ -400,17 +391,27 @@
 
      <script>
   function compra(linkDestino) {
-   
+
     alert('Assinatura feita com sucesso!');
     
-    
+  
     window.open(linkDestino, '_blank'); 
   }
 
-  function darkview(linkDestino) {
-    window.open(linkDestino, '_blank')
+  function lightview(linkDestino) {
+    window.close(linkDestino, '_blank')
   }
+
+  window.addEventListener('pageshow', function(event) {
+ 
+    if (event.persisted || performance.getEntriesByType("navigation")[0].type === "reload") {
+      
+      window.history.back();
+    }
+  });
 </script>
+
+
 
     </main>
 </body>
