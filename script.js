@@ -12,8 +12,11 @@ function darkview(linkDestino) {
 
 }
 
-function questi() {
+const formulario = document.getElementById('formQuest');
 
-    alert('Questionário enviado!');
+formulario.addEventListener('submit', function(event) {
 
-}
+      event.preventDefault();
+
+    alert('Questionário enviado com sucesso')
+});
