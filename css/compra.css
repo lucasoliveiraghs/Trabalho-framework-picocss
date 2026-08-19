@@ -1,0 +1,21 @@
+.code {
+    overflow-x: auto;
+}
+
+.grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.grid img {
+    width: 100%;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
