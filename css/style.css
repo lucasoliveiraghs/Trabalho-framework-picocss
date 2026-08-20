@@ -62,3 +62,33 @@ footer small {
 .footer-links li {
     list-style: none;
 }
+
+.dropdown {
+  position: relative;
+  width: max-content;
+}
+
+.dropdown ul {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  min-width: 150px;
+  margin: 0;
+  padding: 0.5rem;
+  list-style: none;
+  background: var(--pico-background-color);
+  border: 1px solid var(--pico-muted-border-color);
+  border-radius: var(--pico-border-radius);
+  box-shadow: 0 4px 12px rgb(0 0 0 / 15%);
+  z-index: 10;
+}
+
+.dropdown li {
+  margin: 0;
+}
+
+.dropdown a {
+  display: block;
+  padding: 0.5rem;
+  text-decoration: none;
+}
