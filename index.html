@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html data-theme="light" lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +12,8 @@
 </head>
 
 <body>
-  <header style="position: sticky; top: 0; z-index: 1000; background-color: var(--pico-background-color); border-bottom: 0.1rem solid var(--pico-color); width: 100%;">
+  <header
+    style="position: sticky; top: 0; z-index: 1000; background-color: var(--pico-background-color); border-bottom: 0.1rem solid var(--pico-color); width: 100%;">
     <nav class="container">
       <ul>
         <li><a href="html/indexdark.html" role="button" class="contrast">🌙 Modo Dark</a></li>
@@ -54,6 +56,58 @@
         permitindo que você foque inteiramente na estrutura do seu conteúdo sem
         perder tempo com configurações complexas de estilização.
       </p>
+
+      <h2>Histórico e responsável</h2>
+      <div class="grid">
+        <div>
+        <article style="border: 2px solid;">
+          <p>O Pico CSS foi desenvolvido por Lucas Larroche, com a colaboração de contribuidores da comunidade. O
+            projeto é open-source e seu código está disponível publicamente no GitHub, onde também são acompanhadas suas
+            versões e melhorias. Atualmente, a documentação oficial indica a versão 2.1.1.
+
+            O projeto surgiu a partir da ideia de evitar a complexidade de frameworks maiores em páginas que precisam
+            apenas de uma estrutura simples e bem apresentada. Sua filosofia é reduzir o uso de classes e elementos
+            desnecessários, mantendo o HTML mais próximo de sua estrutura original.</p>
+            </div>
+          
+        </article>
+        </div>
+
+        <h2>Comunidade</h2>
+        <div class="grid">
+          <article style="border: 2px solid;">
+            <p>O desenvolvimento acontece de forma aberta, com a participação de colaboradores que ajudam na evolução do
+              framework. O GitHub é utilizado para acompanhar o código, alterações, correções e contribuições.
+
+              Além do framework principal, existem exemplos oficiais que demonstram diferentes formas de utilização,
+              facilitando para novos desenvolvedores entenderem como o Pico pode ser aplicado em projetos reais.
+
+              O framework possui componentes para navegação, botões, formulários, tabelas, cards, dropdowns, modais,
+              indicadores de progresso, tooltips e outros elementos comuns de interfaces web.
+            </p>
+          </article>
+          </div>
+
+          <h2>Documentação</h2>
+          <div class="grid">
+            <article style="border: 2px solid;">
+              <p>A documentação oficial é disponibilizada no próprio site do Pico CSS e segue a filosofia do framework:
+                ser direta, organizada e baseada em exemplos práticos.
+
+                Ela apresenta informações sobre instalação, configuração, layouts, tipografia, botões, formulários,
+                componentes, temas, acessibilidade, Sass e personalização. Também existem exemplos de código para
+                demonstrar como cada recurso pode ser utilizado.
+
+                O Pico pode ser instalado manualmente, utilizado por CDN ou adicionado a projetos através de NPM ou
+                Composer, e a documentação apresenta essas diferentes formas de utilização.
+
+                A documentação também possui páginas específicas para recursos como a versão class-less, permitindo que
+                o desenvolvedor escolha entre uma utilização com poucas classes ou uma abordagem praticamente baseada
+                apenas no HTML semântico.</p>
+            </article>
+          </div>
+
+
     </section>
 
     <section class="container" id="pqusar">
@@ -200,8 +254,10 @@
 
         <form>
           <div class="grid">
-            <input type="password" name="password" placeholder="Senha" aria-label="senha" minlength="8" maxlength="20" required>
-            <input type="email" name="email" placeholder="Endereço de email" aria-label="email" autocomplete="email" required>
+            <input type="password" name="password" placeholder="Senha" aria-label="senha" minlength="8" maxlength="20"
+              required>
+            <input type="email" name="email" placeholder="Endereço de email" aria-label="email" autocomplete="email"
+              required>
             <button type="submit">Inscrever-se</button>
           </div>
 
@@ -308,7 +364,8 @@
             <div>
               <label for="feed">Deixe seu feedback sobre o site (opcional)</label>
 
-              <textarea name="feedback" id="feed" rows="6" placeholder="Exemplo: Eu gostaria que o site mostrasse como ele foi feito..."></textarea>
+              <textarea name="feedback" id="feed" rows="6"
+                placeholder="Exemplo: Eu gostaria que o site mostrasse como ele foi feito..."></textarea>
 
               <button type="submit" style="margin-top: 0.375rem;">
                 Enviar Questionário
@@ -483,7 +540,8 @@
               <div class="footer-links">
                 <ul>
                   <li>
-                    <a href="https://github.com/lucasoliveiraghs/Trabalho-framework-picocss" target="_blank" rel="noopener">
+                    <a href="https://github.com/lucasoliveiraghs/Trabalho-framework-picocss" target="_blank"
+                      rel="noopener">
                       Repositório do site
                     </a>
                   </li>
@@ -502,4 +560,5 @@
     </section>
   </main>
 </body>
+
 </html>
