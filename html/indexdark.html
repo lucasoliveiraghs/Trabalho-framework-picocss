@@ -73,6 +73,181 @@
         </article>
         </div>
 
+                    <div class="container">
+
+              <div class="grid">
+
+                <div></div>
+            <div>
+            <button class="container" onclick="document.getElementById('modal').showModal()">
+            Vizualizar históricos de versões do Pico CSS
+            </button>
+
+           <dialog id="modal">
+           <article>
+           <header>
+           <button
+            aria-label="Fechar"
+            rel="prev"
+            onclick="document.getElementById('modal').close()"
+            ></button>
+
+             <h3>Versões Pico CSS</h3>
+           </header>
+
+           <div style="overflow-x: auto;">
+
+      <table class="striped">
+        <thead>
+          <tr>
+            <th>Versão</th>
+            <th>Ano</th>
+            <th>Novidade / Alteração</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td><strong>1.0</strong></td>
+            <td>2021</td>
+            <td>
+              Primeira versão estável do Pico CSS.
+              Framework minimalista baseado em HTML semântico.
+            </td>
+          </tr>
+
+          <tr>
+            <td><strong>1.1</strong></td>
+            <td>2021</td>
+            <td>
+              Melhorias nos componentes, formulários e responsividade.
+            </td>
+          </tr>
+
+          <tr>
+            <td><strong>1.2</strong></td>
+            <td>2021</td>
+            <td>
+              Melhorias de componentes, acessibilidade, temas
+              e compatibilidade com navegadores.
+            </td>
+          </tr>
+
+          <tr>
+            <td><strong>1.3</strong></td>
+            <td>2022</td>
+            <td>
+              Refinamentos nos componentes, formulários,
+              tipografia e responsividade.
+            </td>
+          </tr>
+
+          <tr>
+            <td><strong>1.4</strong></td>
+            <td>2022</td>
+            <td>
+              Melhorias de estilos e componentes,
+              além de correções de compatibilidade.
+            </td>
+          </tr>
+
+          <tr>
+            <td><strong>1.5</strong></td>
+            <td>2022–2024</td>
+            <td>
+              Última grande linha da série 1.x,
+              recebendo diversas correções e melhorias.
+            </td>
+          </tr>
+
+          <tr>
+            <td><strong>1.5.12</strong></td>
+            <td>2024</td>
+            <td>
+              Últimas correções da linha 1.x antes da versão 2.
+            </td>
+          </tr>
+
+          <tr>
+            <td><strong>2.0.0</strong></td>
+            <td>2025</td>
+            <td>
+              Grande reformulação do framework: nova paleta de cores,
+              mais de 130 variáveis CSS, acessibilidade aprimorada,
+              novos breakpoints, grupo de elementos, temas e melhorias
+              no Sass.
+            </td>
+          </tr>
+
+          <tr>
+            <td><strong>2.0.3</strong></td>
+            <td>2025</td>
+            <td>
+              Melhorias no fechamento de modais usando
+              <code>&lt;button&gt;</code> e correções no reset,
+              formulários e pesquisa.
+            </td>
+          </tr>
+
+          <tr>
+            <td><strong>2.0.4</strong></td>
+            <td>2025</td>
+            <td>
+              Correções no spinner, select múltiplo,
+              bordas e formulários em grids.
+            </td>
+          </tr>
+
+          <tr>
+            <td><strong>2.0.5</strong></td>
+            <td>2025</td>
+            <td>
+              Correções no espaçamento de botões e
+              comportamento de formulários em grids.
+            </td>
+          </tr>
+
+          <tr>
+            <td><strong>2.0.6</strong></td>
+            <td>2025</td>
+            <td>
+              Correções relacionadas a <code>aspect-ratio</code>
+              e bordas.
+            </td>
+          </tr>
+
+          <tr>
+            <td><strong>2.1.0</strong></td>
+            <td>2025</td>
+            <td>
+              Melhorias de compatibilidade, Shadow DOM,
+              tabelas, formulários, Sass e elementos HTML.
+            </td>
+          </tr>
+
+          <tr>
+            <td><strong>2.1.1</strong></td>
+            <td>2025</td>
+            <td>
+              Correção do estilo de tabelas listradas
+              para melhorar a compatibilidade entre navegadores.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+    </div>
+            </div>
+
+            <div></div>
+            
+            </div>
+            </div>
+          
+        </article>
+        </div>
+        </div>
+
         <h2>Comunidade</h2>
         <div class="grid">
           <article style="border: 2px solid;">
@@ -90,7 +265,7 @@
 
           <h2>Documentação</h2>
           <div class="grid">
-            <article style="border: 2px solid;">
+            <article style="border: 2px solid; margin-bottom: 2rem;">
               <p>A documentação oficial é disponibilizada no próprio site do Pico CSS e segue a filosofia do framework:
                 ser direta, organizada e baseada em exemplos práticos.
 
@@ -105,10 +280,20 @@
                 o desenvolvedor escolha entre uma utilização com poucas classes ou uma abordagem praticamente baseada
                 apenas no HTML semântico.</p>
             </article>
+
           </div>
+
+          <div class="grid" style="justify-content: center; display: flex;">
+
+            <div>
+
+            <a type="button" href="https://picocss.com/docs" target="_blank" rel="noopener" style=" text-decoration: none;" >Vizualizar Documentação no site oficial</a>
+           </div>          
+          
+
     </section>
 
-    <section class="container" id="pqusar">
+    <section class="container" id="pqusar" style="margin-top: 5rem;"> 
       <h1>Vantagens e Diferenciais do Pico CSS</h1>
 
       <div class="grid">
